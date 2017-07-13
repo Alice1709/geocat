@@ -1,0 +1,112 @@
+h5 {
+  padding: 0 60px 10px 60px;
+}
+h1 {
+  padding: 0 0 20px 0;
+  line-height: 1.2;
+}
+
+ul.menu {
+  list-style: none; /*убираем маркеры списка*/
+  margin: 0; /*убираем отступы*/
+  padding-left: 0; /*убираем отступы*/
+  margin-top:0; /*делаем отступ сверху*/
+  background:#9e5fd8; /*добавляем фон всему меню*/
+  height: 50 px; /*задаем высоту*/
+}
+a.menu{
+  text-decoration: none; /*убираем подчеркивание текста ссылок*/
+  background:#9e5fd8; /*добавляем фон к пункту меню*/
+  color:#FFFAFA; /*меняем цвет ссылок*/
+  padding:0px 15px; /*добавляем отступ*/
+  font-family: arial; /*меняем шрифт*/
+  line-height:50px; /*ровняем меню по вертикали*/
+  display: block; 
+  -moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
+  -o-transition: all 0.3s 0.01s ease;
+  -webkit-transition: all 0.3s 0.01s ease;
+
+}
+a.menu:hover {
+  background:#BA55D3;/*добавляем эффект при наведении*/
+}
+li.menu {
+  float:left; /*Размещаем список горизонтально для реализации меню*/
+  position:relative; /*задаем позицию для позиционирования*/
+}
+     
+    /*Стили для скрытого выпадающего меню*/
+    li.menu > ul.menu {
+        position:absolute;
+        top:50px;
+        display:none;   
+    }
+     
+    /*Делаем скрытую часть видимой*/
+    li.menu:hover > ul {
+        display:block; 
+        width:500px;  /*Задаем ширину выпадающего меню*/      
+    }
+   li.menu:hover > ul > li {
+        float:none; /*Убираем горизонтальное позиционирование*/
+    }
+
+#main_menu {
+    background: #9e5fd8; /* Цвет фона таблицы */
+    color:#FFFAFA; /* Цвет текста */
+    font-family: arial; 
+  }
+
+#upper {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    z-index: 1000;
+  }
+
+.languagePicker_1kgwf6b select option {
+  text-align-last: center;
+}
+
+@media screen and (max-width: 767px)
+
+.languagePickerContainer_o8shui {
+  width: 100% !important;
+  text-align: center;
+}
+.languagePickerContainer_o8shui {
+    position: absolute !important;
+    text-align: center;
+    color: #fffafa;
+    right: 50px !important;
+    top: 10px !important;
+}
+.languagePickerInnerContainer_lbvbrg {
+    display: inline-block !important;
+    position: relative !important;
+    margin-left: 10px !important;
+}
+.languagePicker_1kgwf6b {
+    font-family: inherit !important;
+    font-size: 14px !important;
+    line-height: 27px !important;
+    border: 0px !important;
+    color: #FFFAFA !important;
+    border-radius: 4px !important;
+    height: 30px !important;
+    padding: 2 60px !important;
+    width: 171px;
+    background-color:#8a53bc !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+}
+.languagePickerIconDown_1tkw3ab {
+    position: absolute !important;
+    right: 10px !important;
+    top: 13px !important;
+    pointer-events: none !important;
+}
+svg[Attributes Style] {
+    width: 10.6688;
+    height: 6;
+}
